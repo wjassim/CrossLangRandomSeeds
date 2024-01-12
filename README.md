@@ -1,5 +1,5 @@
 # Why Duplicate Random Values?
-The objective of this repository is to generate identical random numbers across Python, MATLAB, C/C++, and Octave. This facilitates the comparison and validation of algorithms or models implemented in various programming languages, ensuring more reliable and reproducible results.
+The objective of this post is to generate identical random numbers across Python, MATLAB, C/C++, and Octave. This facilitates the comparison and validation of algorithms or models implemented in various programming languages, ensuring more reliable and reproducible results.
 
 If you find yourself needing to duplicate precisely the same random numbers across different languages, especially with a focus on uniformly distributed random numbers, this repository could be a useful resource for your requirements.
 
