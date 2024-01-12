@@ -7,7 +7,7 @@ To ensure consistent results, set a fixed seed value for the random number gener
 
 ## Python
 
-Suppose we want to generate 10 random numbers from a uniform distribution in Python. Typically, this is achieved using the NumPy library.
+Suppose we want to generate ```10``` random numbers from a uniform distribution in Python. Typically, this is achieved using the NumPy library.
 
 ```python
 import numpy as np
