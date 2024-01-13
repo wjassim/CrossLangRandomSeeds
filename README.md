@@ -109,7 +109,9 @@ Output:
 Generated Random Numbers:
 0.37454   0.950714   0.731994   0.598659   0.156019   0.155995   0.0580836   0.866176   0.601115   0.708073
 ```
-Here, we utilize the ``skipAlternateValues`` function to skip every other value in the random number sequence. This is accomplished by advancing the internal state of the generator. This approach, involving the omission of every other value following each call to the random number generating function, proves beneficial for replicating results in both MATLAB and Python.
+Here, we declare a random number generator of type ``std::mt19937``, which is a random number engine based on the Mersenne Twister algorithm. Additionally, we employ the ``uniform_real_distribution`` class from the C++ Standard Library, commonly paired with C++ random number generation features. 
+
+To duplicate random values, we utilize the ``skipAlternateValues`` function to skip every other value in the random number sequence. This approach, involving the omission of every other value following each call to the random number generating function, proves beneficial for replicating results in both MATLAB and Python.
 
 ## Octave
 In Octave, things are a bit tricky. Octave uses a generator different from MATLAB. According to [Octave's documentation](https://octave.sourceforge.io/octave/function/rand.html), the default generator is initialized from /dev/urandom if available; otherwise, it uses CPU time, wall clock time, and the current fraction of a second.
