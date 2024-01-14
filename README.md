@@ -3,6 +3,7 @@ The objective of this post is to generate identical random numbers across Python
 
 If you find yourself needing to duplicate precisely the same random numbers across different languages, especially with a focus on uniformly distributed random numbers, this repository could be a useful resource for your requirements.
 
+# Examples
 To ensure consistent results, set a fixed seed value for the random number generator across different languages. The following examples demonstrate how to do that:
 
 ## Python
@@ -27,6 +28,7 @@ The number ``42`` is used as the seed value for the random number generator. The
 
 The specific choice of ``42`` is arbitrary; you could use any integer as a seed value. However, using a well-known number like ``42`` is often done in examples to highlight the concept without any particular significance to the value itself. If you run the code multiple times without changing the seed (``np.random.seed(42)`` in this case), you will actually get the same set of ``10`` random numbers each time. 
 
+Output:
 ```
 Generated Random Numbers:
 [0.37454012 0.95071431 0.73199394 0.59865848 0.15601864 0.15599452 0.05808361 0.86617615 0.60111501 0.70807258]
