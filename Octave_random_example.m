@@ -1,4 +1,5 @@
 function ret = twister_seed(SEED=0)
+    % Modified from https://wiki.octave.org/User:Markuman
     % Function to initialize the Mersenne Twister random number generator seed
     % Tested with GNU Octave, version 8.4.0
     % Input:
