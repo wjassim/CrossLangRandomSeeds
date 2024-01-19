@@ -102,7 +102,6 @@ sns.histplot(
     bins=20,
     kde=True,
     element="step",
-    stat="density",
 )
 plt.axvline(x=x.std(), linestyle="-.", color="green", label="std = {:.3f}".format(x.std()))
 plt.axvline(x=x.mean(), linestyle="-.", color="red", label="mean = {:.3f}".format(x.mean()))
@@ -140,9 +139,7 @@ plt.show()
 ![Uniform ranged Distribution](/Images/Uniform_Distribution_Ranged.png)
 
 
-
-### New Numpy library
-    
+   
 ## MATLAB
 To replicate identical values in MATLAB, execute the following commands:
 
