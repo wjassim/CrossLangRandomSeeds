@@ -49,6 +49,15 @@ Generated Random Numbers:
 ````
 ## Plots of Uniformly Distributed Random Numbers
 
+![abbbbbd](/Images/Uniform_Distribution_Original.png#center)
+
+
+<p align="center">
+    <img width="200" src="https://github.com/wjassim/CrossLangRandomSeeds/blob/main/Images/Uniform_Distribution_Original.png" alt="Material Bread logo">
+</p>
+
+
+    
 ## MATLAB
 To replicate identical values in MATLAB, execute the following commands:
 
