@@ -3,6 +3,20 @@ The objective of this post is to generate identical random numbers across Python
 
 If you find yourself needing to duplicate precisely the same random numbers across different languages, especially with a focus on uniformly distributed random numbers, this repository could be a useful resource for your requirements.
 
+# Random Numbers and Distributions
+Random numbers are values generated unpredictably, typically within a specified range. They play a crucial role in various fields, and their distributions, such as uniform, normal (Gaussian), exponential, binomial, poisson and more, characterize the likelihood of different outcomes in statistical and mathematical contexts. 
+
+In this introductory post, I will specifically explore the generation of numbers following a uniform distribution. This exploration arises from a scenario in which I had to reproduce uniform random numbers from MATLAB to Python and C++.
+
+Uniform random numbers are generated from a probability distribution where every value in the range has an equal likelihood of being selected. The probability density function of the uniform distribution is [1]:
+
+```math
+p(x)=\frac{1}{b-a}
+```
+
+anywhere within the interval ```[a, b)```, and zero elsewhere. For a clearer understanding, refer to the plots below.
+
+
 # Examples
 To ensure consistent results, set a fixed seed value for the random number generator across different languages. The following examples demonstrate how to do that:
 
@@ -33,6 +47,7 @@ Output:
 Generated Random Numbers:
 [0.37454012 0.95071431 0.73199394 0.59865848 0.15601864 0.15599452 0.05808361 0.86617615 0.60111501 0.70807258]
 ````
+## Plots of Uniformly Distributed Random Numbers
 
 ## MATLAB
 To replicate identical values in MATLAB, execute the following commands:
@@ -164,6 +179,11 @@ Generated Random Numbers:
 0.374540   0.950714   0.731994   0.598658   0.156019   0.155995   0.058084   0.866176   0.601115   0.708073
 ```
 
+# Reference:
+
+[1] [Numpy's official documentation](https://numpy.org/devdocs/reference/random/generated/numpy.random.uniform.html#numpy-random-uniform)
+
+[2]
 
 
 
