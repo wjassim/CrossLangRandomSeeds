@@ -114,7 +114,7 @@ plt.show()
 Finally, the code below generates random numbers within the range ``[-1, 1)``:
 
 ```python
-# Generate random numbers from a uniform distribution in the range [-1, 1]
+# Generate random numbers from a uniform distribution in the range [-1, 1)
 a, b = -1.0, 1.0
 np.random.seed(42)
 x = np.random.uniform(low=a, high=b, size=size)
