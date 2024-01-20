@@ -111,7 +111,7 @@ plt.show()
 ```
 ![Uniform Density Distribution](/Images/Uniform_Distribution_Density.png)
 
-Finally, the code below generates random numbers within the range [-1, 1):
+Finally, the code below generates random numbers within the range ``[-1, 1)``:
 
 ```python
 # Generate random numbers from a uniform distribution in the range [-1, 1]
