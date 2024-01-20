@@ -138,7 +138,8 @@ plt.show()
 ```
 ![Uniform ranged Distribution](/Images/Uniform_Distribution_Ranged.png)
 
-
+### Numpy Legacy Random Generation
+To be added... 
    
 ## MATLAB
 To replicate identical values in MATLAB, execute the following commands:
