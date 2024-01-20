@@ -8,7 +8,7 @@ Random numbers are values generated unpredictably, typically within a specified 
 
 In this introductory post, I will specifically explore the generation of numbers following a uniform distribution. This exploration arises from a scenario in which I had to reproduce uniform random numbers from MATLAB to Python and C++.
 
-Uniform random numbers are generated from a probability distribution where every value in the range has an equal likelihood of being selected. The probability density function of the uniform distribution is [1]:
+Uniform random numbers are generated from a probability distribution where every value in the range has an equal likelihood of being selected. The [probability density function of the uniform distribution](https://numpy.org/devdocs/reference/random/generated/numpy.random.uniform.html#numpy-random-uniform) is :
 
 ```math
 p(x)=\frac{1}{b-a}
@@ -269,13 +269,6 @@ Output:
 Generated Random Numbers:
 0.374540   0.950714   0.731994   0.598658   0.156019   0.155995   0.058084   0.866176   0.601115   0.708073
 ```
-
-# Reference:
-
-[1] [Numpy's official documentation](https://numpy.org/devdocs/reference/random/generated/numpy.random.uniform.html#numpy-random-uniform)
-
-[2]
-
 
 
 
