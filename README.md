@@ -50,7 +50,7 @@ Generated Random Numbers:
 [0.37454012 0.95071431 0.73199394 0.59865848 0.15601864 0.15599452 0.05808361 0.86617615 0.60111501 0.70807258]
 ````
 ### Plots of Uniformly Distributed Random Numbers
-To see numbers clearly, we often use a big group of them (here, ``10,000``). This makes sure we get a good picture of how the numbers are spread out uniformly. As demonstrated in the code below, we create random numbers from a uniform distribution and illustrate the distribution with a histogram featuring kernel density estimate (KDE) and statistical elements using the seaborn library. The code to generate the plots below is available in ``Plot_number_distribution.py``. 
+To see numbers clearly, we often use a big group of them (here, ``10,000``). This makes sure we get a good picture of how the numbers are spread out uniformly. As demonstrated in the code below, we create random numbers from a uniform distribution and illustrate the distribution with a histogram featuring kernel density estimate (KDE) and statistical elements using the seaborn library. The code to generate the plots below is available in the file ``Plot_number_distribution.py`` within the repository. 
 
 ```python
 import numpy as np
