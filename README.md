@@ -138,9 +138,39 @@ plt.show()
 ```
 ![Uniform ranged Distribution](/Images/Uniform_Distribution_Ranged.png)
 
-### Numpy Legacy Random Generation
-To be added... 
-   
+### NumPy's Enhanced Random Number Generation: BitGenerators, Generators, and the Transition from Legacy Tools
+It is important to mention that NumPy introduced a new random number [generation policy](https://numpy.org/neps/nep-0019-rng-policy.html) with the release of NumPy 1.17.0, aiming to provide enhanced control and flexibility. The key components of this new approach include ``BitGenerators`` and ``Generators``. 
+
+* BitGenerators:
+    - BitGenerators are the low-level components responsible for producing random bits.
+    - They are designed to be fast and secure.
+    - Users can choose a specific BitGenerator to control the underlying randomness.
+
+* Generators:
+    - Generators build on top of BitGenerators and provide a higher-level interface for generating random numbers.
+    - Users can create Generator instances with specific BitGenerators to control the random state.
+
+In contrast, the legacy tools, often referred to as the ``old random state``, accessible through ``numpy.random``, are still available for backward compatibility but are considered deprecated. Users are encouraged to migrate to the new Generator-based approach for improved control and reproducibility. 
+
+To use the new random number generation tools, you would typically create a Generator using a specific BitGenerator and then use that Generator to generate random numbers. For example:
+
+```python
+import numpy as np
+
+# Create a Generator with a specific BitGenerator (PCG64 in this case)
+rng = np.random.default_rng(seed=42)
+
+# Use the Generator to generate random numbers
+random_numbers = rng.random(size=10)
+```
+
+Achieving identical random results when transitioning from legacy tools to new NumPy generators can be challenging due to differences in underlying algorithms and states, necessitating careful consideration and potential adjustments in code or initialization procedures. For more details, please refer to the discussions on the Stack Overflow site: [1](https://stackoverflow.com/questions/77799809/why-do-i-get-different-random-numbers-with-the-same-seed#77799832) and [2](https://stackoverflow.com/questions/77843088/duplicate-randoms-numbers-from-legacy-np-random-rand-using-the-new-np-random-gen). 
+
+
+
+
+
+
 ## MATLAB
 To replicate identical values in MATLAB, execute the following commands:
 
