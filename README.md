@@ -167,9 +167,7 @@ random_numbers = rng.random(size=10)
 Achieving identical random results when transitioning from legacy tools to new NumPy generators can be challenging due to differences in underlying algorithms and states, necessitating careful consideration and potential adjustments in code or initialization procedures. For more details, please refer to the discussions on the Stack Overflow site: [[1]](https://stackoverflow.com/questions/77799809/why-do-i-get-different-random-numbers-with-the-same-seed#77799832), [[2]](https://stackoverflow.com/questions/61676156/how-to-use-the-new-numpy-random-number-generator) and [[3]](https://stackoverflow.com/questions/77843088/duplicate-randoms-numbers-from-legacy-np-random-rand-using-the-new-np-random-gen). 
 
 
-
-
-
+In the following, we demonstrate how to duplicate random numbers obtained by the legacy NumPy library using MATLAB, C/C++, and Octave.
 
 ## MATLAB
 To replicate identical values in MATLAB, execute the following commands:
