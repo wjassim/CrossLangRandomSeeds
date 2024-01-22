@@ -139,7 +139,7 @@ plt.show()
 ![Uniform ranged Distribution](/Images/Uniform_Distribution_Ranged.png)
 
 ### NumPy's Enhanced Random Number Generation: BitGenerators, Generators, and the Transition from Legacy Tools
-It is important to mention that NumPy introduced a new random number [generation policy](https://numpy.org/neps/nep-0019-rng-policy.html) with the release of NumPy 1.17.0, aiming to provide enhanced control and flexibility. The key components of this new approach include ``BitGenerators`` and ``Generators``. 
+It is important to mention that with the release of NumPy 1.17.0, a [new random number generation policy](https://numpy.org/neps/nep-0019-rng-policy.html) was introduced, aiming to provide enhanced control and flexibility. The key components of this new approach include ``BitGenerators`` and ``Generators``. 
 
 * BitGenerators:
     - BitGenerators are the low-level components responsible for producing random bits.
